@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h2>Event Registration</h2>
+    <form action="submit_registration.php" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first_name" required><br><br>
+            
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last_name" required><br><br>
+            
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </fieldset>
+
+        <!-- Event Details Section -->
+        <fieldset>
+            <legend>Event Details</legend>
+            
+            <label for="event">Select Event:</label><br>
+            <select id="event" name="event" required>
+                <option value="">--Please choose an event--</option>
+                <option value="workshop">Workshop on Web Development</option>
+                <option value="seminar">Seminar on Cybersecurity</option>
+                <option value="conference">Annual Tech Conference</option>
+            </select><br><br>
+            
+            <label>Preferred Session:</label><br>
+            <input type="radio" id="morning" name="session" value="morning" required>
+            <label for="morning">Morning</label><br>
+            <input type="radio" id="afternoon" name="session" value="afternoon">
+            <label for="afternoon">Afternoon</label><br><br>
+        </fieldset>
+
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <label for="meal">Meal Preference:</label><br>
+            <select id="meal" name="meal">
+                <option value="">--Please choose an option--</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select><br><br>
+            
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submission Section -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
