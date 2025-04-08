@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💱 Currency Converter</title>
+</head>
+<body>
+
+  <section id="currency-converter">
+    <h1>💱 Currency Converter</h1>
+
+    <form>
+      <label for="amount">Amount:</label><br>
+      <input type="number" id="amount" name="amount" placeholder="Enter amount" required><br><br>
+
+      <label for="from-currency">From:</label><br>
+      <select id="from-currency" name="from-currency" required>
+        <option value="usd">USD - US Dollar</option>
+        <option value="eur">EUR - Euro</option>
+        <option value="gbp">GBP - British Pound</option>
+        <option value="jpy">JPY - Japanese Yen</option>
+      </select><br><br>
+
+      <label for="to-currency">To:</label><br>
+      <select id="to-currency" name="to-currency" required>
+        <option value="usd">USD - US Dollar</option>
+        <option value="eur">EUR - Euro</option>
+        <option value="gbp">GBP - British Pound</option>
+        <option value="jpy">JPY - Japanese Yen</option>
+      </select><br><br>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <p><strong>Converted Amount:</strong> --</p>
+  </section>
+
+</body>
+</html>
