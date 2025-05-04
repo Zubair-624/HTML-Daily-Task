@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Journal</title>
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; background: #fefcf9; padding: 40px; color: #333;">
+
+  <header style="text-align: center; margin-bottom: 30px;">
+    <h1>🌞 Daily Journal</h1>
+    <p>Reflect. Record. Reset.</p>
+  </header>
+
+  <section style="max-width: 600px; margin: auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+    
+    <form>
+      <label for="date"><strong>Date:</strong></label><br>
+      <input type="date" id="date" name="date" required style="width: 100%; padding: 8px; margin: 10px 0;"><br>
+
+      <label for="mood"><strong>Mood Today:</strong></label><br>
+      <select id="mood" name="mood" style="width: 100%; padding: 8px; margin: 10px 0;">
+        <option value="happy">😊 Happy</option>
+        <option value="neutral">😐 Neutral</option>
+        <option value="sad">😢 Sad</option>
+        <option value="stressed">😖 Stressed</option>
+        <option value="excited">🤩 Excited</option>
+      </select><br>
+
+      <label for="entry"><strong>Your Thoughts:</strong></label><br>
+      <textarea id="entry" name="entry" rows="10" style="width: 100%; padding: 10px;" placeholder="Write your day here..."></textarea><br><br>
+
+      <button type="submit" style="padding: 10px 20px;">Save Entry</button>
+    </form>
+  </section>
+
+</body>
+</html>
