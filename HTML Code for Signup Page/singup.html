@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Industry-Level Secure Signup Form">
+    <title>Signup - Secure Access</title>
+</head>
+<body>
+
+    <h2>Sign Up for a Secure Account</h2>
+
+    <form action="process-signup.html" method="post">
+
+        <!-- First Name -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+        <!-- Last Name -->
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+        <!-- Email Address -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required> <label for="other">Other</label>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Country Selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+            <option value="Germany">Germany</option>
+        </select>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+
+        <!-- Terms and Conditions -->
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="terms.html">Terms and Conditions</a>
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+
+        <!-- Already have an account -->
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+
+    </form>
+
+</body>
+</html>

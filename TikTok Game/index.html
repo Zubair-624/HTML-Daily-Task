@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Game</title>
+</head>
+<body>
+
+<div class="game-container">
+    <h1>TikTok Game</h1>
+    <p class="score">Score: <span id="score">0</span></p>
+    <button class="game-button" onclick="addScore()">Click Me!</button>
+</div>
+
+<script>
+    let score = 0;
+
+    function addScore() {
+        score++;
+        document.getElementById("score").textContent = score;
+    }
+</script>
+
+</body>
+</html>
